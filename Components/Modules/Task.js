@@ -33,7 +33,8 @@ const Task = ({ title, data, TaskStatus }) => {
     const data = await res.json();
     if (data.status === 200) {
       console.log(data.message);
-      dispatch(GetData());
+
+      dispatch(GetData()); //Updating
     }
   };
 
@@ -61,7 +62,7 @@ const Task = ({ title, data, TaskStatus }) => {
 
     if (data.status === 200) {
       console.log(data.message);
-      dispatch(GetData());
+      dispatch(GetData()); //Updating
     }
   };
 
@@ -86,7 +87,7 @@ const Task = ({ title, data, TaskStatus }) => {
 
     if (data.status === 200) {
       console.log(data.message);
-      dispatch(GetData());
+      dispatch(GetData()); //Updating
     }
   };
 
